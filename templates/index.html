@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{{
+		url_for('static',filename='styles/style.css') }}"" />
+		<link
+			rel="shortcut icon"
+			href="https://miro.medium.com/max/1000/1*eJWbxmatlWJCNuhJqXB_dw.png"
+			type="image/x-icon"
+		/>
+		<title>Second Degree Linear Equation Solver</title>
+	</head>
+	<body>
+		<header>
+			<h1>Second Degree Linear Equation Solver</h1>
+			<h4><a href="/3">Third Degree Linear Equation Solver</a></h4>
+			<hr />
+		</header>
+		<main>
+			<div class="canvas-container">
+				<h2>Draw First Equation</h2>
+				<canvas id="canvas1" class="canvas"></canvas>
+				<div class="controls">
+					<button class="btn-primary" id="clear1">Clear Canvas</button>
+				</div>
+				<h2>Draw Second Equation</h2>
+				<canvas id="canvas2" class="canvas"></canvas>
+				<div class="controls">
+					<button class="btn-primary" id="clear2">Clear Canvas</button>
+					<button class="btn-success" id="calc">Calculate</button>
+				</div>
+			</div>
+			<div class="soln-box">
+				Equation 1 :<span id="eq1"></span> <br />
+				Equation 2 :<span id="eq2"></span> <br />
+				<hr />
+				Solution X : <span id="solnX"></span> <br />
+				Solution Y : <span id="solnY"></span> <br />
+
+				<hr />
+				<span id="error"></span>
+			</div>
+		</main>
+	</body>
+	<script src="{{ url_for('static', filename='JS/script.js') }}"></script>
+</html>

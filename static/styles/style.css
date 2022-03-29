@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	padding: 0 2rem;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: aliceblue;
+	zoom: 100%;
+}
+
+h1,
+h2 {
+	color: black;
+	display: inline-block;
+	text-align: center;
+}
+
+h4 {
+	text-align: right;
+	margin: 0;
+}
+
+a {
+	color: blue;
+}
+
+.canvas-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.canvas {
+	margin: 10px;
+	width: 100%;
+	height: 30vh;
+	border-radius: 5px;
+	background: #ffffff;
+	border: solid 2px #000;
+	box-shadow: 0px 0px 5px 0px #000;
+	touch-action: none;
+}
+
+.soln-box {
+	font-size: 1.5rem;
+}
+
+.soln-box span {
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: #16a34a;
+	margin-left: 15px;
+}
+
+.soln-box #error {
+	color: #dc2626;
+	font-weight: bold;
+}
+
+/*Buttons*/
+.btn-primary {
+	background-color: #000;
+	border-radius: 10px;
+	width: 100%;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 15px;
+	text-decoration: none;
+	margin: 15px;
+}
+
+.btn-primary:hover {
+	background-color: #444;
+}
+
+.btn-primary:active {
+	position: relative;
+}
+
+.btn-danger {
+	background-color: #dc2626;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+	text-decoration: none;
+	margin: 15px;
+}
+
+.btn-danger:hover {
+	background-color: #7f1d1d;
+}
+
+.btn-danger:active {
+	position: relative;
+}
+
+.btn-success {
+	background-color: #16a34a;
+	width: 100%;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+	text-decoration: none;
+	margin: 15px;
+}
+
+.btn-success:hover {
+	background-color: #14532d;
+}
+
+.btn-success:active {
+	position: relative;
+}
